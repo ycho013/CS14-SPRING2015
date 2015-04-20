@@ -42,7 +42,7 @@ void listCopy(forward_list<Type> L, forward_list <Type> P)
     forward_list<int>::iterator temp = P.end();
     for (i = L.begin(); i != L.end(); i++)
     {
-        P.insert_after(temp, i);
+        P.insert_after(temp, *i);
     }
     
 }
